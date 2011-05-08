@@ -40,8 +40,7 @@ class CollectStat:
     ''' Obejct to Collect the Statistics from the 'n'th Element of the XML Data'''
     def __init__(self,n):
         self.stats = {}
-#        solr_all_stat = minidom.parse(urllib.urlopen(cmd_options.solr_server_url))
-        solr_all_stat = minidom.parse('solr_stat.xml')
+        solr_all_stat = minidom.parse(urllib.urlopen(cmd_options.solr_server_url))
         for stat in solr_all_stat.getElementsByTagName('entry')[n].getElementsByTagName("stat"):
             self.stats[stat.getAttribute('name')] = stat.childNodes[0].data.strip()
 # Check QPS
