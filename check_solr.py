@@ -58,11 +58,11 @@ if cmd_options.qps :
     else:
         print "SOLR QPS OK : %.2f requests per second | ReqPerSec=%.2freqs" % (float(solr_qps_stats.stats['avgRequestsPerSecond']), float(solr_qps_stats.stats['avgRequestsPerSecond']))
         sys.exit(0)
-# Check Avertage Response Time
+# Check Average Response Time
 elif cmd_options.tpr :
     solr_tpr_stats = CollectStat(23)
     if float(solr_tpr_stats.stats['avgTimePerRequest']) >= float(cmd_options.critical_per):
-        print "SOLR AvgRes CRITICAL : %.2f msecond response time | numDocs=%.2f" % (float(solr_tpr_stats.stats['avgTimePerRequest']), float(solr_tpr_stats.stats['avgTimePerRequest']))
+        print "SOLR AvgRes CRITICAL : %.2f msecond response time | AvgRes=%.2f" % (float(solr_tpr_stats.stats['avgTimePerRequest']), float(solr_tpr_stats.stats['avgTimePerRequest']))
         sys.exit(2)
     elif float(solr_tpr_stats.stats['avgTimePerRequest']) >= float(cmd_options.warning_per):
         print "SOLR AvgRes WARNING : %.2f msecond response time | AvgRes=%.2f" % (float(solr_tpr_stats.stats['avgTimePerRequest']), float(solr_tpr_stats.stats['avgTimePerRequest']))
