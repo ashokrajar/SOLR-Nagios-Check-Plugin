@@ -1,0 +1,2154 @@
+
+
+
+<?xml-stylesheet type="text/xsl" href="stats.xsl"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<solr>
+   
+	  <core></core> 
+  
+  <schema>example</schema>
+  <host>unknown</host>
+  <now>Thu May 05 15:42:37 UTC 2011</now>
+  <start>Tue Apr 26 19:05:03 UTC 2011</start>
+  <solr-info>
+
+    <CORE>
+
+    <entry>
+      <name>
+        Searcher@6b9722f0 main
+      </name>
+      <class>
+        org.apache.solr.search.SolrIndexSearcher
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        index searcher
+      </description>
+      <stats>
+
+        <stat name="searcherName" >
+          Searcher@6b9722f0 main
+        </stat>
+
+        <stat name="caching" >
+          true
+        </stat>
+
+        <stat name="numDocs" >
+          88557779
+        </stat>
+
+        <stat name="maxDoc" >
+          95924778
+        </stat>
+
+        <stat name="reader" >
+          SolrIndexReader{this=4753db9,r=ReadOnlyDirectoryReader@4753db9,refCnt=1,segments=21}
+        </stat>
+
+        <stat name="readerDir" >
+          org.apache.lucene.store.NIOFSDirectory@/mnt/shard1/data/index
+        </stat>
+
+        <stat name="indexVersion" >
+          1297959042396
+        </stat>
+
+        <stat name="openedAt" >
+          Thu May 05 15:40:49 UTC 2011
+        </stat>
+
+        <stat name="registeredAt" >
+          Thu May 05 15:40:49 UTC 2011
+        </stat>
+
+        <stat name="warmupTime" >
+          2
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        core
+      </name>
+      <class>
+        
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        SolrCore
+      </description>
+      <stats>
+
+        <stat name="coreName" >
+          
+        </stat>
+
+        <stat name="startTime" >
+          Tue Apr 26 19:05:03 UTC 2011
+        </stat>
+
+        <stat name="refCount" >
+          2
+        </stat>
+
+        <stat name="aliases" >
+          []
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        searcher
+      </name>
+      <class>
+        org.apache.solr.search.SolrIndexSearcher
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        index searcher
+      </description>
+      <stats>
+
+        <stat name="searcherName" >
+          Searcher@6b9722f0 main
+        </stat>
+
+        <stat name="caching" >
+          true
+        </stat>
+
+        <stat name="numDocs" >
+          88557779
+        </stat>
+
+        <stat name="maxDoc" >
+          95924778
+        </stat>
+
+        <stat name="reader" >
+          SolrIndexReader{this=4753db9,r=ReadOnlyDirectoryReader@4753db9,refCnt=1,segments=21}
+        </stat>
+
+        <stat name="readerDir" >
+          org.apache.lucene.store.NIOFSDirectory@/mnt/shard1/data/index
+        </stat>
+
+        <stat name="indexVersion" >
+          1297959042396
+        </stat>
+
+        <stat name="openedAt" >
+          Thu May 05 15:40:49 UTC 2011
+        </stat>
+
+        <stat name="registeredAt" >
+          Thu May 05 15:40:49 UTC 2011
+        </stat>
+
+        <stat name="warmupTime" >
+          2
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    </CORE>
+
+    <QUERYHANDLER>
+
+    <entry>
+      <name>
+        /admin/system
+      </name>
+      <class>
+        org.apache.solr.handler.admin.SystemInfoHandler
+      </class>
+      <version>
+        $Revision: 790580 $
+      </version>
+      <description>
+        Get System Info
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844712202
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /admin/plugins
+      </name>
+      <class>
+        org.apache.solr.handler.admin.PluginInfoHandler
+      </class>
+      <version>
+        $Revision: 790580 $
+      </version>
+      <description>
+        Registry
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844712203
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /admin/file
+      </name>
+      <class>
+        org.apache.solr.handler.admin.ShowFileRequestHandler
+      </class>
+      <version>
+        $Revision: 790580 $
+      </version>
+      <description>
+        Admin Get File -- view config files directly
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844712205
+        </stat>
+
+        <stat name="requests" >
+          1
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          1
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          1.0
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          1.3064293E-6
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /update/javabin
+      </name>
+      <class>
+        org.apache.solr.handler.BinaryUpdateRequestHandler
+      </class>
+      <version>
+        $Revision: 954340 $
+      </version>
+      <description>
+        Add/Update multiple documents with javabin format
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703704
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /admin/luke
+      </name>
+      <class>
+        org.apache.solr.handler.admin.LukeRequestHandler
+      </class>
+      <version>
+        $Revision: 949889 $
+      </version>
+      <description>
+        Lucene Index Browser.  Inspired and modeled after Luke: http://www.getopt.org/luke/
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844712199
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /update
+      </name>
+      <class>
+        org.apache.solr.handler.XmlUpdateRequestHandler
+      </class>
+      <version>
+        $Revision: 730269 $
+      </version>
+      <description>
+        Add documents with XML
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703665
+        </stat>
+
+        <stat name="requests" >
+          112477
+        </stat>
+
+        <stat name="errors" >
+          2
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          124409585
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          1106.0891
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.14694162
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.FieldAnalysisRequestHandler
+      </name>
+      <class>
+        org.apache.solr.handler.FieldAnalysisRequestHandler
+      </class>
+      <version>
+        $Revision: 805844 $
+      </version>
+      <description>
+        Provide a breakdown of the analysis process of field/query text
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703711
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /terms
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.TermsComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703660
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.XmlUpdateRequestHandler
+      </name>
+      <class>
+        org.apache.solr.handler.XmlUpdateRequestHandler
+      </class>
+      <version>
+        $Revision: 730269 $
+      </version>
+      <description>
+        Add documents with XML
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703665
+        </stat>
+
+        <stat name="requests" >
+          112477
+        </stat>
+
+        <stat name="errors" >
+          2
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          124409585
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          1106.0891
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.14694162
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.PingRequestHandler
+      </name>
+      <class>
+        org.apache.solr.handler.PingRequestHandler
+      </class>
+      <version>
+        $Revision: 593627 $
+      </version>
+      <description>
+        Reports application health to a load-balancer
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703715
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /admin/threads
+      </name>
+      <class>
+        org.apache.solr.handler.admin.ThreadDumpHandler
+      </class>
+      <version>
+        $Revision: 790580 $
+      </version>
+      <description>
+        Thread Dump
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844712203
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.BinaryUpdateRequestHandler
+      </name>
+      <class>
+        org.apache.solr.handler.BinaryUpdateRequestHandler
+      </class>
+      <version>
+        $Revision: 954340 $
+      </version>
+      <description>
+        Add/Update multiple documents with javabin format
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703704
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /replication
+      </name>
+      <class>
+        org.apache.solr.handler.ReplicationHandler
+      </class>
+      <version>
+        $Revision: 954709 $
+      </version>
+      <description>
+        ReplicationHandler provides replication of index and configuration files from Master to Slaves
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703636
+        </stat>
+
+        <stat name="requests" >
+          12985
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          29311
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          2.2572968
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.016963795
+        </stat>
+
+        <stat name="indexSize" >
+          70.38 GB
+        </stat>
+
+        <stat name="indexVersion" >
+          1297959042396
+        </stat>
+
+        <stat name="generation" >
+          87538
+        </stat>
+
+        <stat name="indexPath" >
+          /mnt/shard1/data/index
+        </stat>
+
+        <stat name="isMaster" >
+          true
+        </stat>
+
+        <stat name="isSlave" >
+          false
+        </stat>
+
+        <stat name="confFilesToReplicate" >
+          schema.xml,stopwords.txt
+        </stat>
+
+        <stat name="replicateAfter" >
+          [commit, startup]
+        </stat>
+
+        <stat name="replicationEnabled" >
+          true
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /analysis/field
+      </name>
+      <class>
+        org.apache.solr.handler.FieldAnalysisRequestHandler
+      </class>
+      <version>
+        $Revision: 805844 $
+      </version>
+      <description>
+        Provide a breakdown of the analysis process of field/query text
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703711
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /admin/ping
+      </name>
+      <class>
+        org.apache.solr.handler.PingRequestHandler
+      </class>
+      <version>
+        $Revision: 593627 $
+      </version>
+      <description>
+        Reports application health to a load-balancer
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703715
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /analysis/document
+      </name>
+      <class>
+        org.apache.solr.handler.DocumentAnalysisRequestHandler
+      </class>
+      <version>
+        $Revision: 824333 $
+      </version>
+      <description>
+        Provides a breakdown of the analysis process of provided documents
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703708
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        dismax
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.QueryComponent,org.apache.solr.handler.component.FacetComponent,org.apache.solr.handler.component.MoreLikeThisComponent,org.apache.solr.handler.component.HighlightComponent,org.apache.solr.handler.component.StatsComponent,org.apache.solr.handler.component.DebugComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703651
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.ReplicationHandler
+      </name>
+      <class>
+        org.apache.solr.handler.ReplicationHandler
+      </class>
+      <version>
+        $Revision: 954709 $
+      </version>
+      <description>
+        ReplicationHandler provides replication of index and configuration files from Master to Slaves
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703636
+        </stat>
+
+        <stat name="requests" >
+          12985
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          29311
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          2.2572968
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.016963795
+        </stat>
+
+        <stat name="indexSize" >
+          70.38 GB
+        </stat>
+
+        <stat name="indexVersion" >
+          1297959042396
+        </stat>
+
+        <stat name="generation" >
+          87538
+        </stat>
+
+        <stat name="indexPath" >
+          /mnt/shard1/data/index
+        </stat>
+
+        <stat name="isMaster" >
+          true
+        </stat>
+
+        <stat name="isSlave" >
+          false
+        </stat>
+
+        <stat name="confFilesToReplicate" >
+          schema.xml,stopwords.txt
+        </stat>
+
+        <stat name="replicateAfter" >
+          [commit, startup]
+        </stat>
+
+        <stat name="replicationEnabled" >
+          true
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /update/csv
+      </name>
+      <class>
+        Lazy[solr.CSVRequestHandler]
+      </class>
+      <version>
+        $Revision: 817165 $
+      </version>
+      <description>
+        Lazy[solr.CSVRequestHandler]
+      </description>
+      <stats>
+
+        <stat name="note" >
+          not initialized yet
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /elevate
+      </name>
+      <class>
+        Lazy[solr.SearchHandler]
+      </class>
+      <version>
+        $Revision: 817165 $
+      </version>
+      <description>
+        Lazy[solr.SearchHandler]
+      </description>
+      <stats>
+
+        <stat name="note" >
+          not initialized yet
+        </stat>
+
+      </stats>
+    </entry>
+
+
+
+    <entry>
+      <name>
+        standard
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.QueryComponent,org.apache.solr.handler.component.FacetComponent,org.apache.solr.handler.component.MoreLikeThisComponent,org.apache.solr.handler.component.HighlightComponent,org.apache.solr.handler.component.StatsComponent,org.apache.solr.handler.component.DebugComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703630
+        </stat>
+
+        <stat name="requests" >
+          591863
+        </stat>
+
+        <stat name="errors" >
+          598
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          164735861
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          278.33444
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.7732185
+        </stat>
+
+      </stats>
+    </entry>
+
+
+
+    <entry>
+      <name>
+        partitioned
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.QueryComponent,org.apache.solr.handler.component.FacetComponent,org.apache.solr.handler.component.MoreLikeThisComponent,org.apache.solr.handler.component.HighlightComponent,org.apache.solr.handler.component.StatsComponent,org.apache.solr.handler.component.DebugComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703658
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        tvrh
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.QueryComponent,org.apache.solr.handler.component.FacetComponent,org.apache.solr.handler.component.MoreLikeThisComponent,org.apache.solr.handler.component.HighlightComponent,org.apache.solr.handler.component.StatsComponent,org.apache.solr.handler.component.TermVectorComponent,org.apache.solr.handler.component.DebugComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703659
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.DumpRequestHandler
+      </name>
+      <class>
+        org.apache.solr.handler.DumpRequestHandler
+      </class>
+      <version>
+        $Revision: 954340 $
+      </version>
+      <description>
+        Dump handler (debug)
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703717
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /update/extract
+      </name>
+      <class>
+        Lazy[org.apache.solr.handler.extraction.ExtractingRequestHandler]
+      </class>
+      <version>
+        $Revision: 817165 $
+      </version>
+      <description>
+        Lazy[org.apache.solr.handler.extraction.ExtractingRequestHandler]
+      </description>
+      <stats>
+
+        <stat name="note" >
+          not initialized yet
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.DocumentAnalysisRequestHandler
+      </name>
+      <class>
+        org.apache.solr.handler.DocumentAnalysisRequestHandler
+      </class>
+      <version>
+        $Revision: 824333 $
+      </version>
+      <description>
+        Provides a breakdown of the analysis process of provided documents
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703708
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /admin/properties
+      </name>
+      <class>
+        org.apache.solr.handler.admin.PropertiesRequestHandler
+      </class>
+      <version>
+        $Revision: 790580 $
+      </version>
+      <description>
+        Get System Properties
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844712204
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.handler.component.SearchHandler
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.TermsComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703660
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /spell
+      </name>
+      <class>
+        org.apache.solr.handler.component.SearchHandler
+      </class>
+      <version>
+        $Revision: 766412 $
+      </version>
+      <description>
+        Search using components: org.apache.solr.handler.component.QueryComponent,org.apache.solr.handler.component.FacetComponent,org.apache.solr.handler.component.MoreLikeThisComponent,org.apache.solr.handler.component.HighlightComponent,org.apache.solr.handler.component.StatsComponent,org.apache.solr.handler.component.SpellCheckComponent,org.apache.solr.handler.component.DebugComponent,
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703659
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        /debug/dump
+      </name>
+      <class>
+        org.apache.solr.handler.DumpRequestHandler
+      </class>
+      <version>
+        $Revision: 954340 $
+      </version>
+      <description>
+        Dump handler (debug)
+      </description>
+      <stats>
+
+        <stat name="handlerStart" >
+          1303844703717
+        </stat>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="timeouts" >
+          0
+        </stat>
+
+        <stat name="totalTime" >
+          0
+        </stat>
+
+        <stat name="avgTimePerRequest" >
+          NaN
+        </stat>
+
+        <stat name="avgRequestsPerSecond" >
+          0.0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    </QUERYHANDLER>
+
+    <UPDATEHANDLER>
+
+    <entry>
+      <name>
+        updateHandler
+      </name>
+      <class>
+        org.apache.solr.update.DirectUpdateHandler2
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        Update handler that efficiently directly updates the on-disk main lucene index
+      </description>
+      <stats>
+
+        <stat name="commits" >
+          13511
+        </stat>
+
+        <stat name="autocommits" >
+          0
+        </stat>
+
+        <stat name="optimizes" >
+          1
+        </stat>
+
+        <stat name="rollbacks" >
+          0
+        </stat>
+
+        <stat name="expungeDeletes" >
+          0
+        </stat>
+
+        <stat name="docsPending" >
+          1232
+        </stat>
+
+        <stat name="adds" >
+          1232
+        </stat>
+
+        <stat name="deletesById" >
+          0
+        </stat>
+
+        <stat name="deletesByQuery" >
+          0
+        </stat>
+
+        <stat name="errors" >
+          0
+        </stat>
+
+        <stat name="cumulative_adds" >
+          10013525
+        </stat>
+
+        <stat name="cumulative_deletesById" >
+          9887252
+        </stat>
+
+        <stat name="cumulative_deletesByQuery" >
+          0
+        </stat>
+
+        <stat name="cumulative_errors" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    </UPDATEHANDLER>
+
+    <CACHE>
+
+    <entry>
+      <name>
+        queryResultCache
+      </name>
+      <class>
+        org.apache.solr.search.LRUCache
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        LRU Cache(maxSize=512, initialSize=512)
+      </description>
+      <stats>
+
+        <stat name="lookups" >
+          86
+        </stat>
+
+        <stat name="hits" >
+          0
+        </stat>
+
+        <stat name="hitratio" >
+          0.00
+        </stat>
+
+        <stat name="inserts" >
+          86
+        </stat>
+
+        <stat name="evictions" >
+          0
+        </stat>
+
+        <stat name="size" >
+          86
+        </stat>
+
+        <stat name="warmupTime" >
+          0
+        </stat>
+
+        <stat name="cumulative_lookups" >
+          334608
+        </stat>
+
+        <stat name="cumulative_hits" >
+          64225
+        </stat>
+
+        <stat name="cumulative_hitratio" >
+          0.19
+        </stat>
+
+        <stat name="cumulative_inserts" >
+          264781
+        </stat>
+
+        <stat name="cumulative_evictions" >
+          6180
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        fieldCache
+      </name>
+      <class>
+        org.apache.solr.search.SolrFieldCacheMBean
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        Provides introspection of the Lucene FieldCache, this is **NOT** a cache that is managed by Solr.
+      </description>
+      <stats>
+
+        <stat name="entries_count" >
+          21
+        </stat>
+
+        <stat name="entry#0" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@3914df4'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#871460769
+        </stat>
+
+        <stat name="entry#1" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@20bcb63b'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#802672043
+        </stat>
+
+        <stat name="entry#2" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@40eb22df'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#16756247
+        </stat>
+
+        <stat name="entry#3" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@32591c43'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#49357826
+        </stat>
+
+        <stat name="entry#4" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@5a88d465'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#792610909
+        </stat>
+
+        <stat name="entry#5" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@5cf6b2f2'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#664728526
+        </stat>
+
+        <stat name="entry#6" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@19f05086'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#301885572
+        </stat>
+
+        <stat name="entry#7" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@cb044bb'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#1434434390
+        </stat>
+
+        <stat name="entry#8" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@64e4544'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#882404788
+        </stat>
+
+        <stat name="entry#9" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@2148e5d1'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#628293840
+        </stat>
+
+        <stat name="entry#10" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@21e9a0a9'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#887371508
+        </stat>
+
+        <stat name="entry#11" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@61b35f95'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#512894382
+        </stat>
+
+        <stat name="entry#12" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@43c5eeb7'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#1926490188
+        </stat>
+
+        <stat name="entry#13" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@5c7922c9'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#909643897
+        </stat>
+
+        <stat name="entry#14" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@4b0711cf'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#448893886
+        </stat>
+
+        <stat name="entry#15" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@691eb147'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#449490091
+        </stat>
+
+        <stat name="entry#16" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@78615871'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#129835834
+        </stat>
+
+        <stat name="entry#17" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@4d44f2f4'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#307476686
+        </stat>
+
+        <stat name="entry#18" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@1a9a03e9'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#1879972938
+        </stat>
+
+        <stat name="entry#19" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@5bba88d7'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#915006920
+        </stat>
+
+        <stat name="entry#20" >
+          'org.apache.lucene.store.NIOFSDirectory$NIOFSIndexInput@142c123f'=&gt;'time',int,org.apache.lucene.search.FieldCache.NUMERIC_UTILS_INT_PARSER=&gt;[I#778270655
+        </stat>
+
+        <stat name="insanity_count" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        documentCache
+      </name>
+      <class>
+        org.apache.solr.search.LRUCache
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        LRU Cache(maxSize=512, initialSize=512)
+      </description>
+      <stats>
+
+        <stat name="lookups" >
+          63
+        </stat>
+
+        <stat name="hits" >
+          32
+        </stat>
+
+        <stat name="hitratio" >
+          0.50
+        </stat>
+
+        <stat name="inserts" >
+          31
+        </stat>
+
+        <stat name="evictions" >
+          0
+        </stat>
+
+        <stat name="size" >
+          31
+        </stat>
+
+        <stat name="warmupTime" >
+          0
+        </stat>
+
+        <stat name="cumulative_lookups" >
+          59260716
+        </stat>
+
+        <stat name="cumulative_hits" >
+          8898156
+        </stat>
+
+        <stat name="cumulative_hitratio" >
+          0.15
+        </stat>
+
+        <stat name="cumulative_inserts" >
+          50362560
+        </stat>
+
+        <stat name="cumulative_evictions" >
+          45619176
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        fieldValueCache
+      </name>
+      <class>
+        org.apache.solr.search.FastLRUCache
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        Concurrent LRU Cache(maxSize=10000, initialSize=10, minSize=9000, acceptableSize=9500, cleanupThread=false)
+      </description>
+      <stats>
+
+        <stat name="lookups" >
+          0
+        </stat>
+
+        <stat name="hits" >
+          0
+        </stat>
+
+        <stat name="hitratio" >
+          0.00
+        </stat>
+
+        <stat name="inserts" >
+          0
+        </stat>
+
+        <stat name="evictions" >
+          0
+        </stat>
+
+        <stat name="size" >
+          0
+        </stat>
+
+        <stat name="warmupTime" >
+          0
+        </stat>
+
+        <stat name="cumulative_lookups" >
+          0
+        </stat>
+
+        <stat name="cumulative_hits" >
+          0
+        </stat>
+
+        <stat name="cumulative_hitratio" >
+          0.00
+        </stat>
+
+        <stat name="cumulative_inserts" >
+          0
+        </stat>
+
+        <stat name="cumulative_evictions" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        filterCache
+      </name>
+      <class>
+        org.apache.solr.search.FastLRUCache
+      </class>
+      <version>
+        1.0
+      </version>
+      <description>
+        Concurrent LRU Cache(maxSize=512, initialSize=512, minSize=460, acceptableSize=486, cleanupThread=false)
+      </description>
+      <stats>
+
+        <stat name="lookups" >
+          0
+        </stat>
+
+        <stat name="hits" >
+          0
+        </stat>
+
+        <stat name="hitratio" >
+          0.00
+        </stat>
+
+        <stat name="inserts" >
+          0
+        </stat>
+
+        <stat name="evictions" >
+          0
+        </stat>
+
+        <stat name="size" >
+          0
+        </stat>
+
+        <stat name="warmupTime" >
+          0
+        </stat>
+
+        <stat name="cumulative_lookups" >
+          0
+        </stat>
+
+        <stat name="cumulative_hits" >
+          0
+        </stat>
+
+        <stat name="cumulative_hitratio" >
+          0.00
+        </stat>
+
+        <stat name="cumulative_inserts" >
+          0
+        </stat>
+
+        <stat name="cumulative_evictions" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    </CACHE>
+
+    <HIGHLIGHTING>
+
+    <entry>
+      <name>
+        org.apache.solr.highlight.RegexFragmenter
+      </name>
+      <class>
+        org.apache.solr.highlight.RegexFragmenter
+      </class>
+      <version>
+        $Revision: 801872 $
+      </version>
+      <description>
+        RegexFragmenter ([-\w ,/\n\"']{20,200})
+      </description>
+      <stats>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.highlight.HtmlFormatter
+      </name>
+      <class>
+        org.apache.solr.highlight.HtmlFormatter
+      </class>
+      <version>
+        $Revision: 557874 $
+      </version>
+      <description>
+        HtmlFormatter
+      </description>
+      <stats>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    <entry>
+      <name>
+        org.apache.solr.highlight.GapFragmenter
+      </name>
+      <class>
+        org.apache.solr.highlight.GapFragmenter
+      </class>
+      <version>
+        $Revision: 801872 $
+      </version>
+      <description>
+        GapFragmenter
+      </description>
+      <stats>
+
+        <stat name="requests" >
+          0
+        </stat>
+
+      </stats>
+    </entry>
+
+
+    </HIGHLIGHTING>
+
+    <OTHER>
+
+
+
+
+
+
+
+
+
+
+
+    </OTHER>
+
+  </solr-info>
+</solr>
