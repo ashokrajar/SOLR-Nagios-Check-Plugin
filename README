@@ -15,14 +15,11 @@ Options:
 
   -d, --doc             Get Docs information of the SOLR Server
 
-  -H SOLR_SERVER, --host=SOLR_SERVER
-                        SOLR Server IPADDRESS
-
-  -p SOLR_SERVER_PORT, --port=SOLR_SERVER_PORT
-                        SOLR Server port
+  -u http://localhost:8090/solr/admin/stats.jsp, --solrurl=http://localhost:8090/solr/admin/stats.jsp
+                        SOLR Admin Stats URL.
 
   -w Warning Percentage, --warning=Warning Percentage
-                        Exit with WARNING status if higher than the PERCENTAGE
+                        Exit with WARNING status if higher than the percentage
 
   -c Critical Percentage, --critical=Critical Percentage
-                        Exit with CRITICAL status if higher than the PERCENTAGE
+                        Exit with CRITICAL status if higher than the percentage
