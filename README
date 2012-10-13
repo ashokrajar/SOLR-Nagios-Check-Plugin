@@ -1,0 +1,28 @@
+This nagios plugin can be used for checking QPS, no of Document of the Apache SOLR Server.
+
+
+Usage: check_solr.py [options]
+
+Options:
+
+  --version             show program's version number and exit
+
+  -h, --help            show this help message and exit
+
+  -q, --qps             Get QPS information of the SOLR Server
+
+  -r, --requesttime     Get Average Time Per Requests
+
+  -d, --doc             Get Docs information of the SOLR Server
+
+  -H SOLR_SERVER, --host=SOLR_SERVER
+                        SOLR Server IPADDRESS
+
+  -p SOLR_SERVER_PORT, --port=SOLR_SERVER_PORT
+                        SOLR Server port
+
+  -w Warning Percentage, --warning=Warning Percentage
+                        Exit with WARNING status if higher than the PERCENTAGE
+
+  -c Critical Percentage, --critical=Critical Percentage
+                        Exit with CRITICAL status if higher than the PERCENTAGE
