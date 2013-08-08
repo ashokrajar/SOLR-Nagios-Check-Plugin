@@ -2,7 +2,7 @@
 #
 '''
 Project     :       Apache Solr Health Check
-Version     :       0.3
+Version     :       0.4
 Author      :       Ashok Raja R <ashokraja.linux@gmail.com>
 Summary     :       This program is a nagios plugin that checks Apache Solr Health
 Dependency  :       Linux/nagios/Python-2.6
@@ -16,7 +16,7 @@ shell> python check_solr.py
 # Import Python Modules |
 #-----------------------|
 import os, sys, urllib
-from xml.dom import minidom
+import xml.etree.ElementTree as ET
 from optparse import OptionParser
 
 #--------------------------|
@@ -32,22 +32,28 @@ cmd_parser.add_option("-w", "--warning", type = "float", action = "store", dest 
 cmd_parser.add_option("-c", "--critical", type = "float", action = "store", dest = "critical_per", help = "Exit with CRITICAL status if higher than the percentage", metavar = "99")
 (cmd_options, cmd_args) = cmd_parser.parse_args()
 # Check the Command syntax
-if not (cmd_options.warning_per and cmd_options.critical_per and cmd_options.solr_server and cmd_options.solr_server_port):
+if not (cmd_options.warning_per and cmd_options.critical_per and cmd_options.solr_url):
     cmd_parser.print_help()
     sys.exit(3)
 
 # Collect Solr Statistics Object
 class CollectStat:
-    ''' Obejct to Collect the Statistics from the 'n'th Element of the XML Data'''
-    def __init__(self, n):
+    ''' Object to Collect the Statistics from the specified Element of the XML Data'''
+    def __init__(self, groupname, entryname):
         self.stats = {}
-        solr_all_stat = minidom.parseString(urllib.urlopen(cmd_options.solr_url).read())
-        for stat in solr_all_stat.getElementsByTagName('entry')[n].getElementsByTagName("stat"):
-            self.stats[stat.getAttribute('name')] = stat.childNodes[0].data.strip()
+
+        doc = ET.fromstring(urllib.urlopen(cmd_options.solr_url).read())
+
+        tags = doc.findall(".//solr-info/" + groupname + "/entry")
+        for b in tags:
+            if b.find('name').text.strip() == entryname:
+                stats = b.findall("stats/*")
+                for stat in stats:
+                    self.stats[stat.get('name')] = stat.text.strip()
 # Check QPS
 if cmd_options.qps :
     # Get the QPS Statistics
-    solr_qps_stats = CollectStat(23)
+    solr_qps_stats = CollectStat('QUERYHANDLER', 'search')
     if float(solr_qps_stats.stats['avgRequestsPerSecond']) >= cmd_options.critical_per:
         print "SOLR QPS CRITICAL : %.2f requests per second | ReqPerSec=%.2freqs" % (float(solr_qps_stats.stats['avgRequestsPerSecond']), float(solr_qps_stats.stats['avgRequestsPerSecond']))
         sys.exit(2)
@@ -59,7 +65,7 @@ if cmd_options.qps :
         sys.exit(0)
 # Check Average Response Time
 elif cmd_options.tpr :
-    solr_tpr_stats = CollectStat(23)
+    solr_tpr_stats = CollectStat('QUERYHANDLER', 'search')
     if float(solr_tpr_stats.stats['avgTimePerRequest']) >= float(cmd_options.critical_per):
         print "SOLR AvgRes CRITICAL : %.2f msecond response time | AvgRes=%.2f" % (float(solr_tpr_stats.stats['avgTimePerRequest']), float(solr_tpr_stats.stats['avgTimePerRequest']))
         sys.exit(2)
@@ -72,7 +78,7 @@ elif cmd_options.tpr :
 # Check Docs
 elif cmd_options.doc :
     # Get the Documents Statistics
-    solr_doc_stats = CollectStat(0)
+    solr_doc_stats = CollectStat('CORE', 'searcher')
     if int(solr_doc_stats.stats['numDocs']) >= int(cmd_options.critical_per):
         print "SOLR DOCS CRITICAL : %d Total Documents | numDocs=%d" % (int(solr_doc_stats.stats['numDocs']), int(solr_doc_stats.stats['numDocs']))
         sys.exit(2)
