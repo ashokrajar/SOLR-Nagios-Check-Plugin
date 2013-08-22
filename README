@@ -1,4 +1,4 @@
-This plugin is in much early state. As always feedbacks are greatly appriciated! Pull request even more ;)
+This plugin is in much early state. As always feedbacks are greatly appreciated! Pull request even more ;)
 
 
 This nagios plugin can be used for checking QPS, no of Document of the Apache SOLR Server.
