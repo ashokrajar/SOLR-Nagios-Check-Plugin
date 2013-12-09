@@ -18,7 +18,7 @@ Options:
 
   -d, --doc             Get Docs information of the SOLR Server
 
-  -u http://localhost:8090/solr/admin/stats.jsp, --solrurl=http://localhost:8090/solr/admin/stats.jsp
+  -u http://localhost:8090/solr, --solrurl=http://localhost:8090/solr
                         SOLR Admin Stats URL.
 
   -w Warning Percentage, --warning=Warning Percentage
