@@ -27,7 +27,8 @@ cmd_parser = OptionParser(version = "%prog 0.2")
 cmd_parser.add_option("-q", "--qps", action = "store_true", dest = "qps", help = "Get QPS information of the SOLR Server")
 cmd_parser.add_option("-r", "--requesttime", action = "store_true", dest = "tpr", help = "Get Average Time Per Requests")
 cmd_parser.add_option("-d", "--doc", action = "store_true", dest = "doc", help = "Get Docs information of the SOLR Server", default = True)
-cmd_parser.add_option("-u", "--solrurl", type = "string", action = "store", dest = "solr_url", help = "SOLR Admin Stats URL.", metavar = "http://localhost:8090/solr/admin/stats.jsp")
+cmd_parser.add_option("-e", "--entry", type = "string", action = "store", dest = "entry", help = "The index entry", default = "search")
+cmd_parser.add_option("-u", "--solrurl", type = "string", action = "store", dest = "solr_url", help = "SOLR Admin Stats URL.", metavar = "http://localhost:8090/solr")
 cmd_parser.add_option("-w", "--warning", type = "float", action = "store", dest = "warning_per", help = "Exit with WARNING status if higher than the percentage", metavar = "70")
 cmd_parser.add_option("-c", "--critical", type = "float", action = "store", dest = "critical_per", help = "Exit with CRITICAL status if higher than the percentage", metavar = "99")
 (cmd_options, cmd_args) = cmd_parser.parse_args()
@@ -42,7 +43,7 @@ class CollectStat:
     def __init__(self, groupname, entryname):
         self.stats = {}
 
-        doc = ET.fromstring(urllib.urlopen(cmd_options.solr_url).read())
+        doc = ET.fromstring(urllib.urlopen(cmd_options.solr_url + "/admin/stats.jsp").read())
 
         tags = doc.findall(".//solr-info/" + groupname + "/entry")
         for b in tags:
@@ -53,7 +54,7 @@ class CollectStat:
 # Check QPS
 if cmd_options.qps :
     # Get the QPS Statistics
-    solr_qps_stats = CollectStat('QUERYHANDLER', 'search')
+    solr_qps_stats = CollectStat('QUERYHANDLER', cmd_options.entry)   
     if float(solr_qps_stats.stats['avgRequestsPerSecond']) >= cmd_options.critical_per:
         print "SOLR QPS CRITICAL : %.2f requests per second | ReqPerSec=%.2freqs" % (float(solr_qps_stats.stats['avgRequestsPerSecond']), float(solr_qps_stats.stats['avgRequestsPerSecond']))
         sys.exit(2)
@@ -65,7 +66,7 @@ if cmd_options.qps :
         sys.exit(0)
 # Check Average Response Time
 elif cmd_options.tpr :
-    solr_tpr_stats = CollectStat('QUERYHANDLER', 'search')
+    solr_tpr_stats = CollectStat('QUERYHANDLER', cmd_options.entry)
     if float(solr_tpr_stats.stats['avgTimePerRequest']) >= float(cmd_options.critical_per):
         print "SOLR AvgRes CRITICAL : %.2f msecond response time | AvgRes=%.2f" % (float(solr_tpr_stats.stats['avgTimePerRequest']), float(solr_tpr_stats.stats['avgTimePerRequest']))
         sys.exit(2)
